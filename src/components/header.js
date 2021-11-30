@@ -14,29 +14,29 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const solutions = [
   {
-    name: 'Inbox',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    name: 'Service One',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     href: '#',
     icon: InboxIcon,
   },
   {
-    name: 'Messaging',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    name: 'Service Two',
+    description: 'Maecenas rhoncus luctus mollis.',
     href: '#',
     icon: AnnotationIcon,
   },
-  { name: 'Live Chat', description: "Your customers' data will be safe and secure.", href: '#', icon: ChatAlt2Icon },
+  { name: 'Service Three', description: "Maecenas molestie auctor dictum.", href: '#', icon: ChatAlt2Icon },
   {
-    name: 'Knowledge Base',
-    description: "Connect with third-party tools that you're already using.",
+    name: 'Service Four',
+    description: "Mauris tempor finibus facilisis.",
     href: '#',
     icon: QuestionMarkCircleIcon,
   },
 ]
 const navigation = [
-  { name: 'Pricing', href: '#' },
-  { name: 'Partners', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'About', href: '#' },
+  { name: 'Portfolio', href: '#' },
+  { name: 'Blog', href: '#' },
 ]
 
 function classNames(...classes) {
@@ -53,13 +53,13 @@ const Heading = () => {
               <span className="sr-only">Workflow</span>
               <img
                 className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
                 alt=""
               />
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="bg-white -md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -71,7 +71,7 @@ const Heading = () => {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                      'group bg-white -md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
                     )}
                   >
                     <span>Solutions</span>
@@ -94,15 +94,15 @@ const Heading = () => {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                      <div className="-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
                           {solutions.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                              className="-m-3 p-3 flex items-start -lg hover:bg-gray-50"
                             >
-                              <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white sm:h-12 sm:w-12">
+                              <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 -md bg-blue-600 text-white sm:h-12 sm:w-12">
                                 <item.icon className="h-6 w-6" aria-hidden="true" />
                               </div>
                               <div className="ml-4">
@@ -126,14 +126,11 @@ const Heading = () => {
             ))}
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-              Sign in
-            </a>
             <a
               href="#"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent -md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
             >
-              Sign up
+              Contact Us
             </a>
           </div>
         </div>
@@ -151,18 +148,18 @@ const Heading = () => {
             focus
             className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
           >
-            <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+            <div className="-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
               <div className="pt-5 pb-6 px-5">
                 <div className="flex items-center justify-between">
                   <div>
                     <img
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
                       alt="Workflow"
                     />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="bg-white -md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -174,9 +171,9 @@ const Heading = () => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
+                        className="-m-3 p-3 flex items-center -lg hover:bg-gray-50"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white">
+                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 -md bg-blue-500 text-white">
                           <item.icon className="h-6 w-6" aria-hidden="true" />
                         </div>
                         <div className="ml-4 text-base font-medium text-gray-900">{item.name}</div>
@@ -200,16 +197,10 @@ const Heading = () => {
                 <div className="mt-6">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent -md shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
                   >
-                    Sign up
+                    Contact Us
                   </a>
-                  <p className="mt-6 text-center text-base font-medium text-gray-500">
-                    Existing customer?
-                    <a href="#" className="text-gray-900">
-                      Sign in
-                    </a>
-                  </p>
                 </div>
               </div>
             </div>

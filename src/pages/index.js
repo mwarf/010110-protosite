@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 // Step 2: Define your component
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle="Test Home Page">
      
     </Layout>
   )
