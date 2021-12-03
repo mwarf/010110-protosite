@@ -17,7 +17,7 @@ const Hero = () => {
                src="../images/010110-greyscale.jpg"
                 />
 
-                  <div className="absolute inset-0 bg-blue-500 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-architect-blue mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
@@ -31,13 +31,13 @@ const Hero = () => {
                     <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
                       <a
                         href="#"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium  shadow-sm text-blue-700 bg-white hover:bg-blue-50 sm:px-8"
+                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium  shadow-sm text-architect-blue bg-white hover:bg-blue-50 sm:px-8"
                       >
                         Call to action
                       </a>
                       <a
                         href="#"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium  shadow-sm text-white bg-blue-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
+                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium  shadow-sm text-white bg-architect-blue bg-opacity-60 hover:bg-opacity-70 sm:px-8"
                       >
                         Learn More
                       </a>

@@ -11,6 +11,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import Logo from '../components/logo'
 
 const solutions = [
   {
@@ -50,12 +51,8 @@ const Heading = () => {
         <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
-              <span className="sr-only">Workflow</span>
-              <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                alt=""
-              />
+              <span className="sr-only">010110 Architecture</span>
+              <Logo/>
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -71,7 +68,7 @@ const Heading = () => {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group bg-white -md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
+                      'group bg-white -md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-architect-blue'
                     )}
                   >
                     <span>Solutions</span>
@@ -102,7 +99,7 @@ const Heading = () => {
                               href={item.href}
                               className="-m-3 p-3 flex items-start -lg hover:bg-gray-50"
                             >
-                              <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 -md bg-blue-600 text-white sm:h-12 sm:w-12">
+                              <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 -md bg-architect-blue text-white sm:h-12 sm:w-12">
                                 <item.icon className="h-6 w-6" aria-hidden="true" />
                               </div>
                               <div className="ml-4">
@@ -128,7 +125,7 @@ const Heading = () => {
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
               href="#"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent -md shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
+              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent -md text-base font-medium text-architect-blue hover:text-gray-400"
             >
               Contact Us
             </a>
@@ -152,14 +149,10 @@ const Heading = () => {
               <div className="pt-5 pb-6 px-5">
                 <div className="flex items-center justify-between">
                   <div>
-                    <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                      alt="Workflow"
-                    />
+                  <Logo/>
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white -md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                    <Popover.Button className="bg-white -md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-architect-blue">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -173,7 +166,7 @@ const Heading = () => {
                         href={item.href}
                         className="-m-3 p-3 flex items-center -lg hover:bg-gray-50"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 -md bg-blue-500 text-white">
+                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 -md bg-architect-blue text-white">
                           <item.icon className="h-6 w-6" aria-hidden="true" />
                         </div>
                         <div className="ml-4 text-base font-medium text-gray-900">{item.name}</div>
@@ -197,7 +190,7 @@ const Heading = () => {
                 <div className="mt-6">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent -md shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
+                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent -md shadow-sm text-base font-medium text-white bg-architect-blue hover:bg-blue-700"
                   >
                     Contact Us
                   </a>

@@ -6,6 +6,9 @@ module.exports = {
       inter: 'Inter, sans-serif',
     },
     extend: {
+      colors: {
+        'architect-blue' : '#318CC4',
+      }
     },
   },
   variants: {

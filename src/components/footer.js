@@ -163,7 +163,7 @@ const navigation = {
                 <div className="mt-3  sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                   <button
                     type="submit"
-                    className="w-full bg-blue-600 flex items-center justify-center border border-transparent  py-2 px-4 text-base font-medium text-white hover:bg-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    className="w-full bg-architect-blue flex items-center justify-center border border-transparent  py-2 px-4 text-base font-medium text-white hover:bg-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                   >
                     Subscribe
                   </button>
