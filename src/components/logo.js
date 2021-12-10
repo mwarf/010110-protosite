@@ -8,9 +8,9 @@ function Logo() {
       strokeLinejoin="round"
       strokeMiterlimit="2"
       clipRule="evenodd"
-      viewBox="0 0 103 29"
-      height="32"
-      width="103"
+      viewBox="0 0 116 36"
+      height="36"
+      width="116"
     >
       <g transform="translate(-1.463 -1.318)">
         <g>

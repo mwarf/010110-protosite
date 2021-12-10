@@ -15,29 +15,31 @@ import Logo from '../components/logo'
 
 const solutions = [
   {
-    name: 'Service One',
+    name: 'Assets',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     href: '#',
     icon: InboxIcon,
   },
   {
-    name: 'Service Two',
+    name: 'Cases',
     description: 'Maecenas rhoncus luctus mollis.',
     href: '#',
     icon: AnnotationIcon,
   },
-  { name: 'Service Three', description: "Maecenas molestie auctor dictum.", href: '#', icon: ChatAlt2Icon },
+  { name: 'Process', 
+    description: "Maecenas molestie auctor dictum.", 
+    href: '#', icon: ChatAlt2Icon },
   {
-    name: 'Service Four',
+    name: 'Consultation',
     description: "Mauris tempor finibus facilisis.",
     href: '#',
     icon: QuestionMarkCircleIcon,
   },
 ]
 const navigation = [
-  { name: 'About', href: '#' },
-  { name: 'Portfolio', href: '#' },
-  { name: 'Blog', href: '#' },
+  { name: 'Our Work', href: '#' },
+  { name: 'About Us', href: '#' },
+  { name: 'News', href: '#' },
 ]
 
 function classNames(...classes) {
@@ -62,6 +64,11 @@ const Heading = () => {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
+          {navigation.map((item) => (
+              <a key={item.name} href={item.href} className="text-base font-medium text-gray-500 hover:text-gray-900">
+                {item.name}
+              </a>
+            ))}
             <Popover className="relative">
               {({ open }) => (
                 <>
@@ -116,11 +123,7 @@ const Heading = () => {
               )}
             </Popover>
 
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-base font-medium text-gray-500 hover:text-gray-900">
-                {item.name}
-              </a>
-            ))}
+           
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
